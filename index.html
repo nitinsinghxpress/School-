@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Modern Public School & College</title>
+  <meta name="keywords" content="school, college, education" />
+  <meta name="description" content="Modern school website template" />
+  <meta name="author" content="Your Name" />
+
+  <link rel="shortcut icon" href="school-logo.png" type="image/x-icon" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-box">
+      <img src="school-logo.png" alt="School Logo">
+      <h4>Modern Public School & College</h4>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Full Page Registration Popup -->
+  <div id="regPopup" class="popup-overlay" aria-hidden="true">
+    <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <button class="popup-close" type="button" onclick="closeRegPopup()" aria-label="Close popup">&times;</button>
+
+      <div class="popup-content">
+        <h2 id="popupTitle" class="popup-title">
+          Registration &amp; Admission Open for the Session 2026-2027 for Classes Nursery to IX &amp; XI
+        </h2>
+
+        <p class="popup-subtitle">
+          Give your child the foundation for a bright future!
+        </p>
+
+        <ul class="popup-list">
+          <li>Sports-Centric Learning</li>
+          <li>Value-Based Education</li>
+          <li>Student-Centered Approach</li>
+          <li>Focus on Holistic Growth</li>
+          <li>Modern Facilities</li>
+          <li>Personalized Attention</li>
+          <li>Safe and Hygienic Environment</li>
+          <li>Global Perspective</li>
+          <li>Strong Alumni Network</li>
+        </ul>
+
+        <div class="popup-image-wrap">
+          <img src="school-building.jpg" alt="School Building" class="popup-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div><i class="fa-solid fa-location-dot me-2"></i> Dummy Address, Uttar Pradesh, India</div>
+      <div>
+        <i class="fa-solid fa-phone me-2"></i> +91 99999 99999
+        <span class="mx-2">|</span>
+        <i class="fa-solid fa-envelope me-2"></i> info@dummyproject.com
+      </div>
+    </div>
+  </div>
+
+<!-- =========================
+     NAVBAR (FULL MENU)
+========================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
+      <img src="school-logo.png" width="42">
+      <span class="fw-bold">Modern Public School</span>
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNav">
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html#home">Home</a>
+        </li>
+
+        <!-- About Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="about.html" data-bs-toggle="dropdown">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About School</a></li>
+            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+            <li><a class="dropdown-item" href="mission.html">Mission & Vision</a></li>
+          </ul>
+        </li>
+
+        <!-- Academics -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="academic.html" data-bs-toggle="dropdown">
+            Academics
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="curriculum.html">Curriculum</a></li>
+            <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+            <li><a class="dropdown-item" href="examination.html">Examination</a></li>
+            <li><a class="dropdown-item" href="academic-calendar.html">Academic Calendar</a></li>
+          </ul>
+        </li>
+
+        <!-- Facilities -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="facilities.html" data-bs-toggle="dropdown">
+            Facilities
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Smart Classes</a></li>
+            <li><a class="dropdown-item" href="#">Computer Lab</a></li>
+            <li><a class="dropdown-item" href="#">Library</a></li>
+            <li><a class="dropdown-item" href="#">Sports</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <!-- CTA Button -->
+        <li class="nav-item ms-lg-3">
+          <a href="apply.html" class="btn btn-success">Apply Now</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+           
+
+  <!-- Home / Slider -->
+  <section id="home" class="hero-slider">
+    <div id="schoolSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#schoolSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#schoolSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#schoolSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="school-building.jpg" alt="School Slider 1">
+          <div class="slider-caption">
+            <h1>Welcome to Modern Public School & College</h1>
+            <p>Quality education, smart learning, and a bright future for every student.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="class-smart.jpg" alt="School Slider 2">
+          <div class="slider-caption">
+            <h1>Admission Open for 2026-27</h1>
+            <p>Nursery to Class XII with modern classrooms and expert teachers.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="school-ground.jpg" alt="School Slider 3">
+          <div class="slider-caption">
+            <h1>Learn, Grow, and Achieve</h1>
+            <p>Sports, values, and academic excellence in one place.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#schoolSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#schoolSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Admission Banner -->
+  <div class="admission-banner">
+    <span>
+      ADMISSION OPEN FOR SESSION 2026-27 | Nursery to Class XII | Modern Learning | Smart Classes | Sports Activities | Call Now for Admission
+    </span>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2 class="animate__animated animate__fadeInUp">Building Bright Futures Through Quality Education</h2>
+          <p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+            This is a clean dummy school website template. Replace text, images, and contact details with your own content.
+          </p>
+          <div class="mt-4 d-flex flex-wrap gap-3">
+            <a href="contact.html" class="btn btn-primary">Enquiry Now</a>
+            <a href="about.html" class="btn btn-outline-light">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p class="text-muted">A modern and simple layout for your dummy project</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <img src="school-building.jpg" alt="About" class="img-cover" style="height:420px;">
+        </div>
+        <div class="col-lg-6">
+          <h3 class="fw-bold mb-3">Dummy School & College</h3>
+          <p>
+            We provide a professional layout for a school or college website. This design includes a hero section, services, faculty section, gallery, and contact area.
+          </p>
+          <p>
+            Use this structure for practice, testing, or convert it into a real educational website.
+          </p>
+
+          <div class="row g-3 mt-3">
+            <div class="col-md-6">
+              <div class="card feature-card p-4">
+                <div class="icon-box"><i class="fa-solid fa-book-open"></i></div>
+                <h5 class="fw-bold">Smart Learning</h5>
+                <p class="mb-0 text-muted">Interactive and modern education style.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card feature-card p-4">
+                <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                <h5 class="fw-bold">Safe Environment</h5>
+                <p class="mb-0 text-muted">Student-friendly and secure campus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =========================
+     PRINCIPAL MESSAGE
+========================= -->
+<section class="py-5 bg-light">
+  <div class="container">
+
+    <div class="row align-items-center g-4">
+
+      <!-- Image -->
+      <div class="col-lg-5 text-center">
+        <img src="principal.jpg" alt="Principal" class="img-fluid rounded shadow" style="max-height:400px;">
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-7">
+        <h2 class="fw-bold mb-3">Principal's Message</h2>
+
+        <p class="text-muted">
+          Welcome to Modern Public School. Our aim is to provide quality education
+          and build strong character in students. We focus on academic excellence,
+          discipline, and overall development of every child.
+        </p>
+
+        <p class="text-muted">
+          We believe every student has unique potential, and our mission is to nurture
+          them with proper guidance and modern learning techniques.
+        </p>
+
+        <!-- Read More Button -->
+        <a href="principal.html" class="btn btn-primary mt-3">
+          Read More
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services" class="py-5 bg-white">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p class="text-muted">Some sample sections for your dummy project</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card p-4">
+            <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h5 class="fw-bold">Academic Classes</h5>
+            <p class="text-muted mb-0">Nursery to higher classes with structured learning.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card p-4">
+            <div class="icon-box"><i class="fa-solid fa-computer"></i></div>
+            <h5 class="fw-bold">Computer Lab</h5>
+            <p class="text-muted mb-0">Basic computer education and digital skills training.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card p-4">
+            <div class="icon-box"><i class="fa-solid fa-volleyball"></i></div>
+            <h5 class="fw-bold">Sports Activities</h5>
+            <p class="text-muted mb-0">Encouraging physical fitness and team spirit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Futuristic -->
+  <section id="futuristic" class="py-5">
+    <div class="container">
+      <div class="section-title">
+        <h2>Futuristic Learning</h2>
+        <p>Modern tools and smart education for the next generation</p>
+      </div>
+
+      <div class="futuristic-grid">
+        <div class="futuristic-card card-wide">
+          <div class="futuristic-badge"><i class="fa-solid fa-robot"></i> AI Powered Learning</div>
+          <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+          <h5>Smart Classrooms</h5>
+          <p>
+            Interactive boards, digital content, and modern teaching methods help students learn faster and better.
+          </p>
+        </div>
+
+        <div class="futuristic-card card-small">
+          <div class="futuristic-badge"><i class="fa-solid fa-wifi"></i> Connected Campus</div>
+          <div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+          <h5>Digital Campus</h5>
+          <p>
+            Online access, smart communication, and technology-driven systems for better school management.
+          </p>
+        </div>
+
+        <div class="futuristic-card card-small">
+          <div class="futuristic-badge"><i class="fa-solid fa-shield-heart"></i> Secure School</div>
+          <div class="icon-box"><i class="fa-solid fa-lock"></i></div>
+          <h5>Safe Environment</h5>
+          <p>
+            Security, discipline, and a caring atmosphere ensure complete student safety.
+          </p>
+        </div>
+
+        <div class="futuristic-card card-wide">
+          <div class="futuristic-badge"><i class="fa-solid fa-flask"></i> Practical Growth</div>
+          <div class="icon-box"><i class="fa-solid fa-microscope"></i></div>
+          <h5>Science & Innovation</h5>
+          <p>
+            Labs, projects, and creative learning activities encourage curiosity, research, and innovation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculties -->
+  <section id="faculties" class="py-5">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Faculties</h2>
+        <p class="text-muted">Meet the team behind the learning experience</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card faculty-card p-4 text-center">
+            <img src="principal.jpg" alt="Faculty 1" class="faculty-avatar mx-auto">
+            <h5 class="fw-bold mb-1">Principal</h5>
+            <p class="text-muted mb-2">School Administration</p>
+            <p class="mb-0">Focused on academic excellence and student growth.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card faculty-card p-4 text-center">
+            <img src="mteacher.jpg" alt="Faculty 2" class="faculty-avatar mx-auto">
+            <h5 class="fw-bold mb-1">Senior Teacher</h5>
+            <p class="text-muted mb-2">Science & Mathematics</p>
+            <p class="mb-0">Dedicated to clear concepts and practical learning.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card faculty-card p-4 text-center">
+            <img src="fteacher.jpg" alt="Faculty 3" class="faculty-avatar mx-auto">
+            <h5 class="fw-bold mb-1">Sports Mentor</h5>
+            <p class="text-muted mb-2">Physical Education</p>
+            <p class="mb-0">Promotes fitness, discipline, and teamwork.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5 bg-white">
+    <div class="container">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <!--<p class="text-muted">gkvkvv</p>
+      </div> -->
+
+      <div class="gallery-masonry">
+        <div class="gallery-item gallery-card">
+          <div class="gallery-overlay">
+            <img src="school-building.jpg" class="gallery-img" alt="Gallery Image 1">
+          </div>
+          <div class="gallery-caption">
+            <h6>School Building</h6>
+            <p>Beautiful campus view</p>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-card">
+          <div class="gallery-overlay">
+            <img src="school-activity1.png" class="galler-img" alt="Gallery Image 2">
+          </div>
+          <div class="gallery-caption">
+            <h6>Classroom Activity</h6>
+            <p>Students learning together</p>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-card">
+          <div class="gallery-overlay">
+            <img src="sports.jpg" class="gallery-img" alt="Gallery Image 3">
+          </div>
+          <div class="gallery-caption">
+            <h6>Sports Day</h6>
+            <p>Energy, sports and fun</p>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-card">
+          <div class="gallery-overlay">
+            <img src="annual.jpg" class="gallery-img" alt="Gallery Image 4">
+          </div>
+          <div class="gallery-caption">
+            <h6>Annual Function</h6>
+            <p>Memorable school moments</p>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-card">
+          <div class="gallery-overlay">
+            <img src="laboratory.jpg" class="gallery-img" alt="Gallery Image 5">
+          </div>
+          <div class="gallery-caption">
+            <h6>Lab Work</h6>
+            <p>Practical learning experience</p>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-card">
+          <div class="gallery-overlay">
+            <img src="school-activity.png" class="gallery-img" alt="Gallery Image 6">
+          </div>
+          <div class="gallery-caption">
+            <h6>Teachers & Students</h6>
+            <p>Guidance and support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p class="text-muted">Get in touch for admission and enquiry</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="contact-card h-100">
+            <div class="contact-info">
+              <i class="fa-solid fa-location-dot fa-lg"></i>
+              <div>
+                <h6>Address</h6>
+                <p>Dummy Address, Uttar Pradesh, India</p>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <i class="fa-solid fa-phone fa-lg"></i>
+              <div>
+                <h6>Phone</h6>
+                <p>+91 99999 99999</p>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <i class="fa-solid fa-envelope fa-lg"></i>
+              <div>
+                <h6>Email</h6>
+                <p>info@dummyproject.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <i class="fa-solid fa-clock fa-lg"></i>
+              <div>
+                <h6>Working Hours</h6>
+                <p>Monday to Saturday: 8:00 AM - 3:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select">
+                    <option selected>Select Class</option>
+                    <option>Nursery</option>
+                    <option>Class I</option>
+                    <option>Class II</option>
+                    <option>Class III</option>
+                    <option>Class IV</option>
+                    <option>Class V</option>
+                    <option>Class VI</option>
+                    <option>Class VII</option>
+                    <option>Class VIII</option>
+                    <option>Class IX</option>
+                    <option>Class X</option>
+                    <option>Class XI</option>
+                    <option>Class XII</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2026 Modern Public School & College. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#home" class="me-3">Home</a>
+          <a href="#about" class="me-3">About</a>
+          <a href="#services" class="me-3">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+                    
